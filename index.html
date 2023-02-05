@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./dist/output.css" rel="stylesheet">
+  <link rel="stylesheet" href="./dist/import.css">
+  <title>FindaPlace</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+<body class="bg-slate-50 duration-300">
+    <nav class="m-4 flex justify-between">
+      <a class="flex" href="#">
+        <img class="w-8 object-cover md:w-7" src="https://www.pngmart.com/files/15/Vector-Building-PNG-Clipart.png" alt="logo">
+        <div class="mx-2">
+          <div class="font-bold -mb-2 text-xl lg:text-2xl text-green-400">FindaPlace</div>
+          <div class="text-xs font-semibold text-slate-500 pl-3">GET A HOME</div>
+        </div>
+      </a>
+
+      <!-- For smaller devices -->
+      <img class="w-5 mt-2 md:hidden" id="showdrop" onclick="showDrop()" src="./assets/icons/bars-solid.svg" alt="">
+
+
+      <ul class="hidden md:flex md:gap-5 lg:gap-10 md:pr-9 lg:pr-24 pt-1">
+        <li class="text-green-400 text-center mx-2 hover:text-green-500 font-semibold text-lg">
+          <a href="#">BUY</a>
+        </li>
+        <li class="text-green-400 text-center mx-2 hover:text-green-500 font-semibold text-lg">
+          <a href="#">RENT</a>
+        </li>
+        <li class="text-green-400 text-center mx-2 hover:text-green-500 font-semibold text-lg">
+          <a href="#">BOOKING</a>
+        </li>
+        <li class="text-green-400 text-center mx-2 hover:text-green-500 font-semibold text-lg">
+          <a href="#">BLOG</a>
+        </li>
+      </ul>
+
+      <div class="hidden md:flex lg:gap-5 md:gap-3">
+        <a class="text-green-600 font-semibold px-5 py-1.5 border-2 border-green-600 hover:border-green-700 hover:text-green-700 duration-200" href="/login.html">Login</a>
+        <a class="bg-green-400 border-green-600 font-semibold px-5 py-2 text-white hover:bg-green-500 duration-200" href="/register.html">Register</a>
+      </div>
+  </nav>
+
+  <div id="options" class="mx-4 flex flex-col bg-green-300 duration-300 rounded-lg">
+    <ul class="flex flex-col md:hidden py-5">
+      <li class="text-green-800 text-center mb-1 font-semibold text-lg">
+        <a href="#">BUY</a>
+      </li>
+      <li class="text-green-800 text-center mb-1 font-semibold text-lg">
+        <a href="#">RENT</a>
+      </li>
+      <li class="text-green-800 text-center mb-1 font-semibold text-lg">
+        <a href="#">BOOKING</a>
+      </li>
+      <li class="text-green-800 text-center mb-1 font-semibold text-lg">
+        <a href="#">BLOG</a>
+      </li>
+    </ul>
+    <div class="flex flex-col md:hidden m-auto gap-2 my-2 w-full px-2">
+      <a class="text-green-600 bg-white font-semibold text-center w-full px-5 py-1.5 border-2 border-green-600" href="/login.html">Login</a>
+      <a class="text-green-600 bg-white font-semibold text-center px-5 py-1.5 border-2 border-green-600" href="/register.html">Register</a>
+    </div>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+
+</html>
